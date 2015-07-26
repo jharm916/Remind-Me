@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F9C4C80A1B49C22800F37774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8091B49C22800F37774 /* AppDelegate.swift */; };
-		F9C4C80C1B49C22800F37774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C80B1B49C22800F37774 /* ViewController.swift */; };
+		F9C4C80C1B49C22800F37774 /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C80B1B49C22800F37774 /* EditTableViewController.swift */; };
 		F9C4C80F1B49C22800F37774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C4C80D1B49C22800F37774 /* Main.storyboard */; };
 		F9C4C8111B49C22800F37774 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C4C8101B49C22800F37774 /* Images.xcassets */; };
 		F9C4C8141B49C22800F37774 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C4C8121B49C22800F37774 /* LaunchScreen.xib */; };
 		F9C4C8201B49C22800F37774 /* Remind_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C81F1B49C22800F37774 /* Remind_MeTests.swift */; };
+		F9C4C82C1B49C3E100F37774 /* OperateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C82B1B49C3E100F37774 /* OperateModel.swift */; };
+		F9C4C82F1B49CB6B00F37774 /* ListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */; };
+		F9C4C8311B49F92000F37774 /* InitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8301B49F92000F37774 /* InitTableViewController.swift */; };
+		F9C4C8661B4F4CF400F37774 /* ListEntryInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8651B4F4CF400F37774 /* ListEntryInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F95C23911B630F4C00802E29 /* EditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
 		F9C4C8041B49C22800F37774 /* Remind Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remind Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C4C8081B49C22800F37774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C4C8091B49C22800F37774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9C4C80B1B49C22800F37774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9C4C80B1B49C22800F37774 /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
 		F9C4C80E1B49C22800F37774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9C4C8101B49C22800F37774 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9C4C8131B49C22800F37774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F9C4C8191B49C22800F37774 /* Remind MeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remind MeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C4C81E1B49C22800F37774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C4C81F1B49C22800F37774 /* Remind_MeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remind_MeTests.swift; sourceTree = "<group>"; };
+		F9C4C82B1B49C3E100F37774 /* OperateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperateModel.swift; sourceTree = "<group>"; };
+		F9C4C82D1B49C49400F37774 /* ActionInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionInterface.h; sourceTree = "<group>"; };
+		F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntry.swift; sourceTree = "<group>"; };
+		F9C4C8301B49F92000F37774 /* InitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitTableViewController.swift; sourceTree = "<group>"; };
+		F9C4C8651B4F4CF400F37774 /* ListEntryInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntryInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +87,8 @@
 		F9C4C8061B49C22800F37774 /* Remind Me */ = {
 			isa = PBXGroup;
 			children = (
-				F9C4C8091B49C22800F37774 /* AppDelegate.swift */,
-				F9C4C80B1B49C22800F37774 /* ViewController.swift */,
-				F9C4C80D1B49C22800F37774 /* Main.storyboard */,
-				F9C4C8101B49C22800F37774 /* Images.xcassets */,
-				F9C4C8121B49C22800F37774 /* LaunchScreen.xib */,
+				F9C4C8331B49F95100F37774 /* View */,
+				F9C4C8321B49F92C00F37774 /* Model */,
 				F9C4C8071B49C22800F37774 /* Supporting Files */,
 			);
 			path = "Remind Me";
@@ -90,6 +97,13 @@
 		F9C4C8071B49C22800F37774 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F95C23911B630F4C00802E29 /* EditTableViewController.h */,
+				F9C4C8651B4F4CF400F37774 /* ListEntryInput.swift */,
+				F9C4C8121B49C22800F37774 /* LaunchScreen.xib */,
+				F9C4C8101B49C22800F37774 /* Images.xcassets */,
+				F9C4C82D1B49C49400F37774 /* ActionInterface.h */,
+				F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */,
+				F9C4C8091B49C22800F37774 /* AppDelegate.swift */,
 				F9C4C8081B49C22800F37774 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +124,24 @@
 				F9C4C81E1B49C22800F37774 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9C4C8321B49F92C00F37774 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9C4C82B1B49C3E100F37774 /* OperateModel.swift */,
+				F9C4C8301B49F92000F37774 /* InitTableViewController.swift */,
+				F9C4C80B1B49C22800F37774 /* EditTableViewController.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9C4C8331B49F95100F37774 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9C4C80D1B49C22800F37774 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C4C80C1B49C22800F37774 /* ViewController.swift in Sources */,
+				F9C4C82F1B49CB6B00F37774 /* ListEntry.swift in Sources */,
+				F9C4C80C1B49C22800F37774 /* EditTableViewController.swift in Sources */,
+				F9C4C82C1B49C3E100F37774 /* OperateModel.swift in Sources */,
+				F9C4C8661B4F4CF400F37774 /* ListEntryInput.swift in Sources */,
+				F9C4C8311B49F92000F37774 /* InitTableViewController.swift in Sources */,
 				F9C4C80A1B49C22800F37774 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +447,7 @@
 				F9C4C8251B49C22800F37774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9C4C8261B49C22800F37774 /* Build configuration list for PBXNativeTarget "Remind MeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +456,7 @@
 				F9C4C8281B49C22800F37774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
