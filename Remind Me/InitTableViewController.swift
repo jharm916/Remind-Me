@@ -81,10 +81,13 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         if entry.isAM == false {
             index = 7
         }
-        while index < entryList.count && entryList[index].hour > entry.hour {
+        if entry.isAM == true && entry.hour < 6 {
+            index = 19
+        }
+        while index < entryList.count && entryList[index].hour <= entry.hour {
             index++
         }
-        while index < entryList.count && entryList[index].minutes > entry.minutes {
+        while entryList[index].hour == entry.hour && index < entryList.count && entryList[index].minutes <= entry.minutes {
             index++
         }
         return index
@@ -95,7 +98,8 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         var source: EditTableViewController = segue.sourceViewController as! EditTableViewController
         
         if var item: ListEntryInput = source.newEntry {
-            self.entryList.insert(item, atIndex: self.entryList.count)
+            var index = getInsertIndex(source.newEntry!)
+            self.entryList.insert(item, atIndex: index)
             self.tableView.reloadData()
         }
     }

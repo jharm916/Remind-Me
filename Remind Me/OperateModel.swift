@@ -10,7 +10,7 @@ import Foundation
 
 class OperateModel {
     
-    func AddItem(item: ListEntry, entryList: NSMutableArray) {
+    func AddItem(item: ListEntryInput, entryList: NSMutableArray) {
         var list = entryList
         entryList.addObject(item)
     }

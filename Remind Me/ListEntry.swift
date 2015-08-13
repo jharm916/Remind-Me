@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ListEntry: NSObject {
-    
+    /*
     var hour = 0
     var minutes = 0
     var message: NSString = ""
@@ -40,5 +40,5 @@ class ListEntry: NSObject {
             return "PM"
         }
     }
-    
+    */
 }

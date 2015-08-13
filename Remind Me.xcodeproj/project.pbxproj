@@ -14,7 +14,6 @@
 		F9C4C8141B49C22800F37774 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C4C8121B49C22800F37774 /* LaunchScreen.xib */; };
 		F9C4C8201B49C22800F37774 /* Remind_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C81F1B49C22800F37774 /* Remind_MeTests.swift */; };
 		F9C4C82C1B49C3E100F37774 /* OperateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C82B1B49C3E100F37774 /* OperateModel.swift */; };
-		F9C4C82F1B49CB6B00F37774 /* ListEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */; };
 		F9C4C8311B49F92000F37774 /* InitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8301B49F92000F37774 /* InitTableViewController.swift */; };
 		F9C4C8661B4F4CF400F37774 /* ListEntryInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8651B4F4CF400F37774 /* ListEntryInput.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +42,6 @@
 		F9C4C81F1B49C22800F37774 /* Remind_MeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remind_MeTests.swift; sourceTree = "<group>"; };
 		F9C4C82B1B49C3E100F37774 /* OperateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperateModel.swift; sourceTree = "<group>"; };
 		F9C4C82D1B49C49400F37774 /* ActionInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionInterface.h; sourceTree = "<group>"; };
-		F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntry.swift; sourceTree = "<group>"; };
 		F9C4C8301B49F92000F37774 /* InitTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitTableViewController.swift; sourceTree = "<group>"; };
 		F9C4C8651B4F4CF400F37774 /* ListEntryInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEntryInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +100,6 @@
 				F9C4C8121B49C22800F37774 /* LaunchScreen.xib */,
 				F9C4C8101B49C22800F37774 /* Images.xcassets */,
 				F9C4C82D1B49C49400F37774 /* ActionInterface.h */,
-				F9C4C82E1B49CB6B00F37774 /* ListEntry.swift */,
 				F9C4C8091B49C22800F37774 /* AppDelegate.swift */,
 				F9C4C8081B49C22800F37774 /* Info.plist */,
 			);
@@ -244,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C4C82F1B49CB6B00F37774 /* ListEntry.swift in Sources */,
 				F9C4C80C1B49C22800F37774 /* EditTableViewController.swift in Sources */,
 				F9C4C82C1B49C3E100F37774 /* OperateModel.swift in Sources */,
 				F9C4C8661B4F4CF400F37774 /* ListEntryInput.swift in Sources */,
