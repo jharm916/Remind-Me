@@ -77,7 +77,13 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
     
     /* determines the index to insert the new element at */
     func getInsertIndex(entry: ListEntryInput) -> Int {
+        /*
+            Note: The minimum number of cells to have in the list is 24
+        */
+        
         var index: Int = 0
+        
+        //find hours
         if entry.isAM == false {
             index = 7
         }
@@ -87,9 +93,37 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         while index < entryList.count && entryList[index].hour <= entry.hour {
             index++
         }
-        while entryList[index].hour == entry.hour && index < entryList.count && entryList[index].minutes <= entry.minutes {
-            index++
+        
+        //check bounds
+        if entry.isAM == true && entry.hour == 12 {
+            index = 7
         }
+        
+        if entry.isAM == false && entry.hour == 1 {
+            index = 0
+            while entryList[index].isAM == true && entryList[index].hour != 1 {
+                index++
+            }
+        }
+        else if entry.hour == 1 {
+            while entryList[index].isAM != true && entryList[index].hour != 1 {
+                index++
+            }
+        }
+        
+        if entry.isAM == true && entry.hour == 5 {
+            index = 0
+            while entryList[index].hour == 5 && entry.minutes > entryList[index].minutes {
+                index++
+            }
+            
+        } else {
+            //find minutes
+            while (index < entryList.count && entryList[index].hour == entry.hour && entryList[index].minutes <= entry.minutes) {
+                index++
+            }
+        }
+        
         return index
     }
     
