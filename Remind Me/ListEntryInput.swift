@@ -24,6 +24,7 @@ public class ListEntryInput: UITableViewCell {
         textField.placeholder = placeholder
         textField.accessibilityValue = text
         textField.accessibilityLabel = placeholder
+        textField.autoresizingMask = .FlexibleLeftMargin
     }
     
     public func setValues (var hour: Int, var minutes: Int, var message: NSString, var isAM: Bool) {

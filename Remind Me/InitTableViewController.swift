@@ -24,7 +24,7 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         initTableView.dataSource = self
         initTableView.delegate = self
         initTableView.backgroundColor = UIColor.blackColor()
-        
+        navigationItem.leftBarButtonItem = editButtonItem()
         loadInitialData()
     }
     
@@ -71,6 +71,11 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         
         cell.labelField.text = toString(item.hour) + ":" + item.GetPaddedMinutes() + " " + item.GetTimePeriod()
         cell.configure(text: item.message as String, placeholder: "")
+        
+        cell.textField.setTranslatesAutoresizingMaskIntoConstraints(false)
+        cell.contentView.addConstraint(NSLayoutConstraint(item: cell.textField, attribute: .Left, relatedBy: .Equal, toItem: cell.contentView, attribute: .Right, multiplier: 1, constant: 2))
+        
+        cell.contentView.addConstraint(NSLayoutConstraint(item: cell.textField, attribute: .Right, relatedBy: .Equal, toItem: cell.contentView, attribute: .Right, multiplier: 1, constant: -7))
         
         return cell
     }
@@ -120,6 +125,17 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
         }
         
         return index
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == .Delete {
+            entryList.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
+            if entryList.count == 0 {
+                navigationItem.leftBarButtonItem = nil
+            }
+        }
     }
     
     /* entry point on EditTableViewController button clicks. adds the new entry to the table */

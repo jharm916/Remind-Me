@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController title="Remind-Me" id="8zC-x6-13d" userLabel="Initial View" customClass="InitTableViewController" customModule="Remind_Me" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jnl-B8-Emu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -24,13 +24,16 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-qV-sgb">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-qV-sgb">
                                             <rect key="frame" x="152" y="7" width="212" height="30"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="SRa-qV-sgb" secondAttribute="centerX" constant="-69" id="0Hg-IC-n3k"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelField" destination="5sL-gV-2fd" id="hGL-Gb-egQ"/>
@@ -46,6 +49,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Remind-Me" id="s00-Fd-Rwe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="SGf-Wq-rHa"/>
                         <barButtonItem key="rightBarButtonItem" title="New" id="6JJ-Cv-fxU">
                             <connections>
                                 <segue destination="N8l-uL-TWp" kind="show" id="8hZ-TX-WNe"/>
@@ -53,6 +57,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="378" height="600"/>
                     <connections>
                         <outlet property="initTableView" destination="jnl-B8-Emu" id="lhp-od-d8G"/>
                     </connections>
@@ -88,7 +94,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eW2-2e-XSf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="34x-kv-uy9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gUc-Rc-9Tg">
@@ -117,6 +123,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="378" height="600"/>
                     <connections>
                         <outlet property="doneButton" destination="rCJ-SG-f88" id="Ykn-Wa-Ns3"/>
                         <outlet property="temDescription" destination="W0u-m6-FFq" id="lRQ-JS-XbO"/>
