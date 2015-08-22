@@ -77,49 +77,44 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
     
     /* determines the index to insert the new element at */
     func getInsertIndex(entry: ListEntryInput) -> Int {
-        /*
-            Note: The minimum number of cells to have in the list is 24
-        */
         
         var index: Int = 0
         
-        //find hours
-        if entry.isAM == false {
-            index = 7
-        }
-        if entry.isAM == true && entry.hour < 6 {
-            index = 19
-        }
-        while index < entryList.count && entryList[index].hour <= entry.hour {
-            index++
-        }
-        
-        //check bounds
-        if entry.isAM == true && entry.hour == 12 {
-            index = 7
-        }
-        
-        if entry.isAM == false && entry.hour == 1 {
-            index = 0
-            while entryList[index].isAM == true && entryList[index].hour != 1 {
+        if (entry.hour >= 6 && entry.hour <= 12 && entry.isAM == true) {
+            while (index < entryList.count && entry.hour > entryList[index].hour) {
+                index++
+            }
+            while (index < entryList.count && entry.hour == entryList[index].hour && entry.minutes > entryList[index].minutes) {
                 index++
             }
         }
-        else if entry.hour == 1 {
-            while entryList[index].isAM != true && entryList[index].hour != 1 {
+        else if (entry.hour >= 1 && entry.hour <= 12 && entry.isAM == false) {
+            while (index < entryList.count && entryList[index].isAM == true) {
+                index++
+            }
+            while (index < entryList.count && entry.hour > entryList[index].hour) {
+                index++
+            }
+            while (index < entryList.count && entry.hour == entryList[index].hour && entry.minutes > entryList[index].minutes) {
                 index++
             }
         }
-        
-        if entry.isAM == true && entry.hour == 5 {
-            index = 0
-            while entryList[index].hour == 5 && entry.minutes > entryList[index].minutes {
+        else if (entry.hour >= 1 && entry.hour < 5 && entry.isAM == true) {
+            while (index < entryList.count && entryList[index].isAM == true) {
                 index++
             }
-            
-        } else {
-            //find minutes
-            while (index < entryList.count && entryList[index].hour == entry.hour && entryList[index].minutes <= entry.minutes) {
+            while (index < entryList.count && entryList[index].isAM == false) {
+                index++
+            }
+            while (index < entryList.count && entry.hour > entryList[index].hour) {
+                index++
+            }
+            while (index < entryList.count && entry.hour == entryList[index].hour && entry.minutes > entryList[index].minutes) {
+                index++
+            }
+        }
+        else if (entry.hour == 5 && entry.isAM == true) {
+            while (index < entryList.count && entryList[index].hour == 5 && entryList[index].isAM == true && entry.minutes > entryList[index].minutes) {
                 index++
             }
         }

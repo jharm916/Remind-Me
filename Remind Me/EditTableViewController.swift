@@ -50,6 +50,10 @@ class EditTableViewController: UIViewController {
             if hours == 0 {
                 hours = 12
             }
+            if hours == 12 {
+                isAM = false
+                hours = 12
+            }
             
             self.newEntry = ListEntryInput()
             self.newEntry!.setValues(hours!, minutes:minutes!, message: temDescription.text, isAM: isAM)
