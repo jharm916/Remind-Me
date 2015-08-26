@@ -13,6 +13,8 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
     
     @IBOutlet var initTableView: UITableView!
     
+    @IBOutlet weak var ClearButton: UIButton!
+    
     var i = 0
     var hours = 8
     var isAM = true
@@ -52,6 +54,20 @@ class InitTableViewController: UITableViewController, UITableViewDataSource, UIT
             }
         }
         self.tableView.reloadData()
+    }
+    
+    /* clears the of all notifications */
+    @IBAction func clearItems(sender: AnyObject) {
+        if sender as? NSObject != self.ClearButton {
+            return
+        }
+        
+        for item in entryList {
+            var curr: ListEntryInput = item as ListEntryInput
+            curr.message = ""
+        }
+        
+        tableView.reloadData()
     }
     
     /* get the number of items in the list */

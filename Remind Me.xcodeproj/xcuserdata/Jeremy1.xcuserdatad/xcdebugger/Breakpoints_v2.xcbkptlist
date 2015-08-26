@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Remind Me/InitTableViewController.swift"
-            timestampString = "461904551.575399"
+            timestampString = "462243174.232527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "getInsertIndex(_:)"
             landmarkType = "5">
          </BreakpointContent>

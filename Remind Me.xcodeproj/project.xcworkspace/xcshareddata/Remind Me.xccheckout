@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1A78FC39-1DDE-4DEE-B130-DC61E2FE34F7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Remind Me</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1725D9108C0FCA46E4B0DE7B9B3E6287E2A17B17</key>
 		<string>https://github.com/jharm916/Remind-Me.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Remind Me.xcodeproj</string>
+	<string>Remind Me.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1725D9108C0FCA46E4B0DE7B9B3E6287E2A17B17</key>

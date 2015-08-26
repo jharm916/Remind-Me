@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9828B201B8D3759002A9DB7 /* ClearAllCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828B1F1B8D3759002A9DB7 /* ClearAllCell.swift */; };
 		F9C4C80A1B49C22800F37774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C8091B49C22800F37774 /* AppDelegate.swift */; };
 		F9C4C80C1B49C22800F37774 /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4C80B1B49C22800F37774 /* EditTableViewController.swift */; };
 		F9C4C80F1B49C22800F37774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C4C80D1B49C22800F37774 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		F95C23911B630F4C00802E29 /* EditTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditTableViewController.h; sourceTree = "<group>"; };
+		F9828B1F1B8D3759002A9DB7 /* ClearAllCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearAllCell.swift; sourceTree = "<group>"; };
 		F9C4C8041B49C22800F37774 /* Remind Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remind Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C4C8081B49C22800F37774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C4C8091B49C22800F37774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F9C4C82D1B49C49400F37774 /* ActionInterface.h */,
 				F9C4C8091B49C22800F37774 /* AppDelegate.swift */,
 				F9C4C8081B49C22800F37774 /* Info.plist */,
+				F9828B1F1B8D3759002A9DB7 /* ClearAllCell.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				F9C4C8661B4F4CF400F37774 /* ListEntryInput.swift in Sources */,
 				F9C4C8311B49F92000F37774 /* InitTableViewController.swift in Sources */,
 				F9C4C80A1B49C22800F37774 /* AppDelegate.swift in Sources */,
+				F9828B201B8D3759002A9DB7 /* ClearAllCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
